@@ -1,13 +1,16 @@
 package org.demo;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+public class App {
+    /**
+     * bootstrap:
+     * parse command line
+     * set up environment
+     * kick off main logic
+     */
+    public static void main(String[] args) {
+        MyApplet mainApplet = Configuration.getMainApplet();
+        mainApplet.run();
     }
+
+
 }
